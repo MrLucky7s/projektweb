@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyTravel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+/*GALERIJA*/
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: right;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+</style>
+<body>
+<!--Navigacija-->
+    <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">MyTravel</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="http://localhost/MyTravel/MyTravel.html">Home</a></li>
+                      <li><a href="http://localhost/MyTravel/MyTravelCro.html">Croatia</a></li>
+                      <li><a href="http://localhost/MyTravel/MyTravelSpa.html">Spain</a></li>
+                      <li><a href="http://localhost/MyTravel/MyTravelIta.html">Italy</a></li>
+                      <li><a href="http://localhost/MyTravel/MyTravelGer.html">Germany</a></li>
+                      <li><a href="http://localhost/MyTravel/MyTravelAus.html">Austria</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="http://localhost/registration/register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <li><a href="http://localhost/registration/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+<!--Slike-->
+    <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="http://localhost/MyTravel/MyTravelCro.html">
+                <img src="http://localhost/MyTravel/Slike/croatia.jpg" alt="Croatia" width="600" height="400">
+              </a>
+              <div class="desc">Visit Croatia's wonderful coast!</div>
+            </div>
+          </div>
+
+    <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="http://localhost/MyTravel/MyTravelSpa.html">
+                <img src="http://localhost/MyTravel/Slike/spain.jpg" alt="Spain" width="600" height="400">
+              </a>
+              <div class="desc">Get lost in the wondrous streets of Spain!</div>
+            </div>
+          </div>
+
+    <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="http://localhost/MyTravel/MyTravelIta.html">
+                <img src="http://localhost/MyTravel/Slike/italy.jpg" alt="Italy" width="600" height="400">
+              </a>
+              <div class="desc">Fall in love with Italy!</div>
+            </div>
+          </div>
+
+    <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="http://localhost/MyTravel/MyTravelAus.html">
+                 <img src="http://localhost/MyTravel/Slike/austria.jpg" alt="Austria" width="600" height="400">
+                </a>
+                  <div class="desc">Discover the fairytale-like Austria!</div>
+                </div>
+            </div>
+    <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="http://localhost/MyTravel/MyTravelGer.html">
+                 <img src="http://localhost/MyTravel/Slike/germany.jpg" alt="Germany" width="600" height="400">
+                </a>
+                  <div class="desc">Wander through Germany's sprwaling metropolises!</div>
+                </div>
+            </div>
+</body>
+</html>
